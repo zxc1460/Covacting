@@ -8,5 +8,5 @@
 import Foundation
 
 struct Constant {
-    
+    static let BASE_URL = "https://dev.covaccting.shop"
 }
