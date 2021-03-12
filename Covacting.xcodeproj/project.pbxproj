@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED7825FB64B200EE1C9D /* SceneDelegate.swift */; };
 		AF35ED8025FB64B300EE1C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35ED7F25FB64B300EE1C9D /* Assets.xcassets */; };
 		AF35ED8325FB64B300EE1C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35ED8125FB64B300EE1C9D /* LaunchScreen.storyboard */; };
-		AF35ED9B25FB66AA00EE1C9D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED9A25FB66AA00EE1C9D /* Constant.swift */; };
 		AF35ED9F25FB66DE00EE1C9D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED9E25FB66DE00EE1C9D /* BaseViewController.swift */; };
 		AF35EDA425FB66FF00EE1C9D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDA325FB66FF00EE1C9D /* BaseTabBarController.swift */; };
 		AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDA725FB680B00EE1C9D /* Device.swift */; };
@@ -25,6 +24,7 @@
 		AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDBD25FB691100EE1C9D /* UIButton.swift */; };
 		AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC025FB692400EE1C9D /* UIViewController.swift */; };
 		AF35EDC425FB693F00EE1C9D /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */; };
+		AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A1B1325FB6C0800A68C15 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		AF35ED7F25FB64B300EE1C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF35ED8225FB64B300EE1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35ED8425FB64B300EE1C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF35ED9A25FB66AA00EE1C9D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = SOURCE_ROOT; };
 		AF35ED9E25FB66DE00EE1C9D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AF35EDA325FB66FF00EE1C9D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		AF35EDA725FB680B00EE1C9D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		AF35EDBD25FB691100EE1C9D /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		AF35EDC025FB692400EE1C9D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		AF5A1B1325FB6C0800A68C15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F56028EB919D568B055C9A80 /* Pods_Covacting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covacting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DB986C092933364A08C6C8 /* Pods-Covacting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covacting.debug.xcconfig"; path = "Target Support Files/Pods-Covacting/Pods-Covacting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +70,6 @@
 				F9DB986C092933364A08C6C8 /* Pods-Covacting.debug.xcconfig */,
 				59231794B92B1E18076A0FDB /* Pods-Covacting.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,11 +123,11 @@
 		AF35ED8F25FB654C00EE1C9D /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				AF35ED9A25FB66AA00EE1C9D /* Constant.swift */,
 				AF35ED9825FB668700EE1C9D /* Font */,
 				AF35ED9725FB668000EE1C9D /* Extension */,
 				AF35ED9625FB667700EE1C9D /* CommonClass */,
 				AF35ED9325FB664900EE1C9D /* Base */,
+				AF5A1B1325FB6C0800A68C15 /* Constant.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -296,6 +295,7 @@
 			files = (
 				AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */,
 				AF35ED7725FB64B100EE1C9D /* AppDelegate.swift in Sources */,
+				AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */,
 				AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */,
 				AF35EDB525FB688100EE1C9D /* Date.swift in Sources */,
 				AF35ED9F25FB66DE00EE1C9D /* BaseViewController.swift in Sources */,
@@ -308,7 +308,6 @@
 				AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */,
 				AF35EDAE25FB684D00EE1C9D /* Color.swift in Sources */,
 				AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */,
-				AF35ED9B25FB66AA00EE1C9D /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
