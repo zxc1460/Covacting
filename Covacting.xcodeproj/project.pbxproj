@@ -24,6 +24,13 @@
 		AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDBD25FB691100EE1C9D /* UIButton.swift */; };
 		AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC025FB692400EE1C9D /* UIViewController.swift */; };
 		AF35EDC425FB693F00EE1C9D /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */; };
+		AF516D0F25FBD98700D664F2 /* tagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516D0D25FBD98700D664F2 /* tagCollectionViewCell.swift */; };
+		AF516D1025FBD98700D664F2 /* tagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF516D0E25FBD98700D664F2 /* tagCollectionViewCell.xib */; };
+		AF516D1525FBE53300D664F2 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516D1325FBE53300D664F2 /* ReviewTableViewCell.swift */; };
+		AF516D1625FBE53300D664F2 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF516D1425FBE53300D664F2 /* ReviewTableViewCell.xib */; };
+		AF516D1A25FBEB5500D664F2 /* HomeViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516D1925FBEB5500D664F2 /* HomeViewControllerProtocol.swift */; };
+		AF516D2625FBF7DC00D664F2 /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */; };
+		AF516D2725FBF7DC00D664F2 /* ReviewWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */; };
 		AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A1B1325FB6C0800A68C15 /* Constant.swift */; };
 		AFF78D7D25FBAF8C003A8A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */; };
 		AFF78D7E25FBAF8C003A8A2D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */; };
@@ -53,6 +60,13 @@
 		AF35EDBD25FB691100EE1C9D /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		AF35EDC025FB692400EE1C9D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
+		AF516D0D25FBD98700D664F2 /* tagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF516D0E25FBD98700D664F2 /* tagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tagCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF516D1325FBE53300D664F2 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		AF516D1425FBE53300D664F2 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		AF516D1925FBEB5500D664F2 /* HomeViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerProtocol.swift; sourceTree = "<group>"; };
+		AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
+		AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewWriteViewController.xib; sourceTree = "<group>"; };
 		AF5A1B1325FB6C0800A68C15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -88,6 +102,8 @@
 		AF17140325FBAC190075F56D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AF516D1825FBEB4800D664F2 /* Protocol */,
+				AF516D0A25FBD95F00D664F2 /* Cell */,
 				AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */,
 				AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */,
 			);
@@ -129,6 +145,8 @@
 		AF35ED8C25FB651800EE1C9D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AF516D1D25FBF59100D664F2 /* Review */,
+				AFF78D8E25FBC6A6003A8A2D /* CommonCell */,
 				AF17140325FBAC190075F56D /* Home */,
 			);
 			path = Main;
@@ -157,8 +175,8 @@
 		AF35ED9325FB664900EE1C9D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				AF35ED9E25FB66DE00EE1C9D /* BaseTabBarController.swift */,
 				AF35EDA325FB66FF00EE1C9D /* BaseViewController.swift */,
+				AF35ED9E25FB66DE00EE1C9D /* BaseTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -196,6 +214,57 @@
 				AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		AF516D0A25FBD95F00D664F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AF516D0D25FBD98700D664F2 /* tagCollectionViewCell.swift */,
+				AF516D0E25FBD98700D664F2 /* tagCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AF516D1825FBEB4800D664F2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AF516D1925FBEB5500D664F2 /* HomeViewControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AF516D1D25FBF59100D664F2 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				AF516D1E25FBF59D00D664F2 /* Write */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		AF516D1E25FBF59D00D664F2 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */,
+				AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
+		AFF78D8E25FBC6A6003A8A2D /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFF78D8F25FBC6AE003A8A2D /* ReviewTableViewCell */,
+			);
+			path = CommonCell;
+			sourceTree = "<group>";
+		};
+		AFF78D8F25FBC6AE003A8A2D /* ReviewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF516D1325FBE53300D664F2 /* ReviewTableViewCell.swift */,
+				AF516D1425FBE53300D664F2 /* ReviewTableViewCell.xib */,
+			);
+			path = ReviewTableViewCell;
 			sourceTree = "<group>";
 		};
 		B99430F4731F092DE2ABB432 /* Frameworks */ = {
@@ -266,11 +335,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFF78D8525FBB717003A8A2D /* GmarketSansBold.otf in Resources */,
+				AF516D1025FBD98700D664F2 /* tagCollectionViewCell.xib in Resources */,
 				AFF78D8625FBB717003A8A2D /* GmarketSansLight.otf in Resources */,
 				AF35ED8325FB64B300EE1C9D /* LaunchScreen.storyboard in Resources */,
 				AFF78D8425FBB717003A8A2D /* GmarketSansMedium.otf in Resources */,
+				AF516D1625FBE53300D664F2 /* ReviewTableViewCell.xib in Resources */,
 				AF35ED8025FB64B300EE1C9D /* Assets.xcassets in Resources */,
 				AFF78D7E25FBAF8C003A8A2D /* HomeViewController.xib in Resources */,
+				AF516D2725FBF7DC00D664F2 /* ReviewWriteViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +412,10 @@
 				AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */,
 				AF35EDAE25FB684D00EE1C9D /* Color.swift in Sources */,
 				AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */,
+				AF516D2625FBF7DC00D664F2 /* ReviewWriteViewController.swift in Sources */,
+				AF516D0F25FBD98700D664F2 /* tagCollectionViewCell.swift in Sources */,
+				AF516D1A25FBEB5500D664F2 /* HomeViewControllerProtocol.swift in Sources */,
+				AF516D1525FBE53300D664F2 /* ReviewTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,6 +13,7 @@ extension UIFont {
         case bold = "Bold"
         case regular = "Regular"
         case medium = "Medium"
+        case semiBold = "SemiBold"
     }
     
     public enum GmarketSansType: String {
