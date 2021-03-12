@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BlackHanSans-Regular.ttf">
+            <string>BlackHanSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VaccineInfoViewController" customModule="Covacting" customModuleProvider="target">
+            <connections>
+                <outlet property="vaccineInfoTableView" destination="2sg-FX-Y0j" id="PQR-JM-0Kg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewSubTitleLabel" destination="ouz-15-uKV" id="ycN-jP-RXy"/>
+                <outlet property="viewTitleLabel" destination="f6f-GX-kvP" id="WKV-Bw-QQY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코백팅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6f-GX-kvP">
+                    <rect key="frame" x="21" y="56" width="76" height="30"/>
+                    <fontDescription key="fontDescription" name="BlackHanSans-Regular" family="Black Han Sans" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="백신 정보들을 한 눈에!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouz-15-uKV">
+                    <rect key="frame" x="21" y="106" width="177.5" height="24"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2sg-FX-Y0j">
+                    <rect key="frame" x="0.0" y="168" width="414" height="654"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2sg-FX-Y0j" secondAttribute="bottom" constant="40" id="GvU-gn-0jz"/>
+                <constraint firstItem="2sg-FX-Y0j" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IZo-Lc-akf"/>
+                <constraint firstItem="2sg-FX-Y0j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bO1-XA-puV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f6f-GX-kvP" secondAttribute="trailing" constant="10" id="fjT-fY-eHK"/>
+                <constraint firstItem="ouz-15-uKV" firstAttribute="leading" secondItem="f6f-GX-kvP" secondAttribute="leading" id="g9W-5A-L30"/>
+                <constraint firstItem="f6f-GX-kvP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="qyZ-E3-Mw4"/>
+                <constraint firstItem="2sg-FX-Y0j" firstAttribute="top" secondItem="ouz-15-uKV" secondAttribute="bottom" constant="38" id="tQa-mK-rwh"/>
+                <constraint firstItem="f6f-GX-kvP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="u7l-Hy-VGg"/>
+                <constraint firstItem="ouz-15-uKV" firstAttribute="top" secondItem="f6f-GX-kvP" secondAttribute="bottom" constant="20" id="x95-Gj-Tm2"/>
+            </constraints>
+            <point key="canvasLocation" x="-1006" y="125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

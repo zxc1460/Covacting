@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InfoTableViewHeader" id="iN0-l3-epB" customClass="InfoTableViewHeader" customModule="Covacting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dt9-rT-3NG">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLy-LS-2hc">
+                            <rect key="frame" x="20" y="20" width="36" height="18"/>
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlL-uh-VNU">
+                            <rect key="frame" x="20" y="28" width="36" height="9"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="bLy-LS-2hc" firstAttribute="top" secondItem="dt9-rT-3NG" secondAttribute="top" constant="20" id="1rd-C2-tus"/>
+                        <constraint firstItem="mlL-uh-VNU" firstAttribute="leading" secondItem="bLy-LS-2hc" secondAttribute="leading" id="40L-Rm-Stt"/>
+                        <constraint firstItem="mlL-uh-VNU" firstAttribute="height" secondItem="bLy-LS-2hc" secondAttribute="height" multiplier="0.5" id="6Us-Px-Z4c"/>
+                        <constraint firstItem="bLy-LS-2hc" firstAttribute="leading" secondItem="dt9-rT-3NG" secondAttribute="leading" constant="20" id="JY7-nm-rP6"/>
+                        <constraint firstItem="mlL-uh-VNU" firstAttribute="top" secondItem="bLy-LS-2hc" secondAttribute="bottom" constant="-10" id="SZr-yl-2rM"/>
+                        <constraint firstItem="mlL-uh-VNU" firstAttribute="trailing" secondItem="bLy-LS-2hc" secondAttribute="trailing" id="YRq-5y-0xK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dt9-rT-3NG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0dF-7p-mvH"/>
+                <constraint firstItem="dt9-rT-3NG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jJ2-Id-rGT"/>
+                <constraint firstItem="dt9-rT-3NG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uzG-V7-1HX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dt9-rT-3NG" secondAttribute="bottom" id="xBg-8B-cb9"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="highlightView" destination="mlL-uh-VNU" id="W1o-Jm-SP2"/>
+                <outlet property="tabNameLabel" destination="bLy-LS-2hc" id="NsK-4a-qSj"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="-13"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
