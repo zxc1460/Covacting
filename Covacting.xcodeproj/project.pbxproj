@@ -12,8 +12,8 @@
 		AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED7825FB64B200EE1C9D /* SceneDelegate.swift */; };
 		AF35ED8025FB64B300EE1C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35ED7F25FB64B300EE1C9D /* Assets.xcassets */; };
 		AF35ED8325FB64B300EE1C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35ED8125FB64B300EE1C9D /* LaunchScreen.storyboard */; };
-		AF35ED9F25FB66DE00EE1C9D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED9E25FB66DE00EE1C9D /* BaseViewController.swift */; };
-		AF35EDA425FB66FF00EE1C9D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDA325FB66FF00EE1C9D /* BaseTabBarController.swift */; };
+		AF35ED9F25FB66DE00EE1C9D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED9E25FB66DE00EE1C9D /* BaseTabBarController.swift */; };
+		AF35EDA425FB66FF00EE1C9D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDA325FB66FF00EE1C9D /* BaseViewController.swift */; };
 		AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDA725FB680B00EE1C9D /* Device.swift */; };
 		AF35EDAB25FB682300EE1C9D /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDAA25FB682300EE1C9D /* IndicatorView.swift */; };
 		AF35EDAE25FB684D00EE1C9D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDAD25FB684D00EE1C9D /* Color.swift */; };
@@ -25,6 +25,12 @@
 		AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC025FB692400EE1C9D /* UIViewController.swift */; };
 		AF35EDC425FB693F00EE1C9D /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */; };
 		AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A1B1325FB6C0800A68C15 /* Constant.swift */; };
+		AFF78D7D25FBAF8C003A8A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */; };
+		AFF78D7E25FBAF8C003A8A2D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */; };
+		AFF78D8425FBB717003A8A2D /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */; };
+		AFF78D8525FBB717003A8A2D /* GmarketSansBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D8225FBB717003A8A2D /* GmarketSansBold.otf */; };
+		AFF78D8625FBB717003A8A2D /* GmarketSansLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D8325FBB717003A8A2D /* GmarketSansLight.otf */; };
+		AFF78D8925FBC0D2003A8A2D /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF78D8825FBC0D2003A8A2D /* CALayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +41,8 @@
 		AF35ED7F25FB64B300EE1C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF35ED8225FB64B300EE1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35ED8425FB64B300EE1C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF35ED9E25FB66DE00EE1C9D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		AF35EDA325FB66FF00EE1C9D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		AF35ED9E25FB66DE00EE1C9D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		AF35EDA325FB66FF00EE1C9D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AF35EDA725FB680B00EE1C9D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		AF35EDAA25FB682300EE1C9D /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		AF35EDAD25FB684D00EE1C9D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -48,6 +54,12 @@
 		AF35EDC025FB692400EE1C9D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		AF5A1B1325FB6C0800A68C15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
+		AFF78D8225FBB717003A8A2D /* GmarketSansBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansBold.otf; sourceTree = "<group>"; };
+		AFF78D8325FBB717003A8A2D /* GmarketSansLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansLight.otf; sourceTree = "<group>"; };
+		AFF78D8825FBC0D2003A8A2D /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		F56028EB919D568B055C9A80 /* Pods_Covacting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covacting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DB986C092933364A08C6C8 /* Pods-Covacting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covacting.debug.xcconfig"; path = "Target Support Files/Pods-Covacting/Pods-Covacting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +83,15 @@
 				59231794B92B1E18076A0FDB /* Pods-Covacting.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF17140325FBAC190075F56D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */,
+				AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		AF35ED6A25FB64B100EE1C9D = {
@@ -108,6 +129,7 @@
 		AF35ED8C25FB651800EE1C9D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AF17140325FBAC190075F56D /* Home */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -123,11 +145,11 @@
 		AF35ED8F25FB654C00EE1C9D /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				AF5A1B1325FB6C0800A68C15 /* Constant.swift */,
 				AF35ED9825FB668700EE1C9D /* Font */,
 				AF35ED9725FB668000EE1C9D /* Extension */,
 				AF35ED9625FB667700EE1C9D /* CommonClass */,
 				AF35ED9325FB664900EE1C9D /* Base */,
-				AF5A1B1325FB6C0800A68C15 /* Constant.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -135,8 +157,8 @@
 		AF35ED9325FB664900EE1C9D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				AF35ED9E25FB66DE00EE1C9D /* BaseViewController.swift */,
-				AF35EDA325FB66FF00EE1C9D /* BaseTabBarController.swift */,
+				AF35ED9E25FB66DE00EE1C9D /* BaseTabBarController.swift */,
+				AF35EDA325FB66FF00EE1C9D /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -161,6 +183,7 @@
 				AF35EDBD25FB691100EE1C9D /* UIButton.swift */,
 				AF35EDC025FB692400EE1C9D /* UIViewController.swift */,
 				AF35EDC325FB693F00EE1C9D /* UINavigationBar.swift */,
+				AFF78D8825FBC0D2003A8A2D /* CALayer.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -168,6 +191,9 @@
 		AF35ED9825FB668700EE1C9D /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				AFF78D8225FBB717003A8A2D /* GmarketSansBold.otf */,
+				AFF78D8325FBB717003A8A2D /* GmarketSansLight.otf */,
+				AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -239,8 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF78D8525FBB717003A8A2D /* GmarketSansBold.otf in Resources */,
+				AFF78D8625FBB717003A8A2D /* GmarketSansLight.otf in Resources */,
 				AF35ED8325FB64B300EE1C9D /* LaunchScreen.storyboard in Resources */,
+				AFF78D8425FBB717003A8A2D /* GmarketSansMedium.otf in Resources */,
 				AF35ED8025FB64B300EE1C9D /* Assets.xcassets in Resources */,
+				AFF78D7E25FBAF8C003A8A2D /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,12 +328,14 @@
 				AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */,
 				AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */,
 				AF35EDB525FB688100EE1C9D /* Date.swift in Sources */,
-				AF35ED9F25FB66DE00EE1C9D /* BaseViewController.swift in Sources */,
-				AF35EDA425FB66FF00EE1C9D /* BaseTabBarController.swift in Sources */,
+				AF35ED9F25FB66DE00EE1C9D /* BaseTabBarController.swift in Sources */,
+				AF35EDA425FB66FF00EE1C9D /* BaseViewController.swift in Sources */,
 				AF35EDBB25FB68EE00EE1C9D /* UIView.swift in Sources */,
 				AF35EDB225FB686400EE1C9D /* String.swift in Sources */,
+				AFF78D8925FBC0D2003A8A2D /* CALayer.swift in Sources */,
 				AF35EDAB25FB682300EE1C9D /* IndicatorView.swift in Sources */,
 				AF35EDC425FB693F00EE1C9D /* UINavigationBar.swift in Sources */,
+				AFF78D7D25FBAF8C003A8A2D /* HomeViewController.swift in Sources */,
 				AF35EDB825FB68A200EE1C9D /* UIFont.swift in Sources */,
 				AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */,
 				AF35EDAE25FB684D00EE1C9D /* Color.swift in Sources */,
