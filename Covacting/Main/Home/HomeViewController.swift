@@ -34,20 +34,28 @@ class HomeViewController: BaseViewController {
             }
         }
     }
+    lazy var dataManager = HomeDataManager(delegate: self)
+    var data: [ReviewHomeResult]?
+    
     
     // MARK: IBActions
     @IBAction func timeSortButtonClicked(_ sender: UIButton) {
         isTimeSort = true
+        
+        self.showIndicator()
+        requestReview()
     }
     @IBAction func likeSortButtonClicked(_ sender: Any) {
         isTimeSort = false
+        
+        self.showIndicator()
+        requestReview()
     }
     
     // MARK: View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "홈"
         self.navigationItem.title = nil
         
         initView()
@@ -62,8 +70,10 @@ class HomeViewController: BaseViewController {
         self.tabBarController?.tabBar.isHidden = false
         mainLogoImageView.isHidden = false
         
-        isTimeSort = true
         tableView.addObserver(self, forKeyPath: "contentSize", options: .new, context: nil)
+        
+        self.showIndicator()
+        requestReview()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -74,7 +84,7 @@ class HomeViewController: BaseViewController {
     // MARK: init Methods
     func initBarButton() {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "iconWriting"), style: .plain, target: self, action: #selector(pushReviewWrite))
-        self.navigationItem.backButtonTitle = self.title
+        self.navigationItem.backButtonTitle = "홈"
     }
     
     func initRefreshControl() {
@@ -112,9 +122,7 @@ class HomeViewController: BaseViewController {
     
     // MARK: Selector
     @objc func handleRefreshControl(_ sender: UIRefreshControl) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.scrollView.refreshControl?.endRefreshing()
-        }
+        requestReview()
     }
     
     @objc func pushReviewWrite() {
@@ -127,6 +135,31 @@ class HomeViewController: BaseViewController {
                 tableViewHeight.constant = tableView.contentSize.height
             }
         }
+    }
+    
+    func requestReview() {
+        var standard: Int = 1
+        if !isTimeSort {
+            standard = 2
+        }
+        let array = Array(selectedTags)
+        
+        var vaccineName1: String?
+        var vaccineName2: String?
+        var vaccineName3: String?
+        
+        
+        vaccineName1 = array.first
+        
+        if array.count > 1 {
+            vaccineName2 = array[1]
+        }
+        
+        if array.count > 2 {
+            vaccineName3 = array[2]
+        }
+        
+        dataManager.getReviews(standard: standard, vaccineName1: vaccineName1, vaccineName2: vaccineName2, vaccineName3: vaccineName3)
     }
 }
 
@@ -152,6 +185,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if selectedTags.count < 3 {
             selectedTags.insert(tags[indexPath.row])
+            self.showIndicator()
+            self.requestReview()
         } else {
             self.presentAlert(title: "최대 3개까지 선택 가능합니다")
             collectionView.deselectItem(at: indexPath, animated: true)
@@ -160,12 +195,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         selectedTags.remove(tags[indexPath.row])
+        self.showIndicator()
+        self.requestReview()
     }
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -177,7 +214,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.setTextDelegate(contentText: content, index: indexPath.section, delegate: self)
+        if let data = data {
+            cell.setTextDelegate(homeData: data[indexPath.section], index: indexPath.section, delegate: self)
+        }
         
         return cell
     }
@@ -199,7 +238,29 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension HomeViewController: ReviewTableViewCellDelegate {
     func expandButtonClicked(index: Int, isExpanded: Bool) {
+        data?[index].isExpanded = isExpanded
         tableView.beginUpdates()
         tableView.endUpdates()
     }
+    
+    func likeButtonClicked(index: Int, likeClicked: Bool) {
+        data?[index].likeClicked = likeClicked
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+}
+
+extension HomeViewController: HomeViewControllerDelegate {
+    func didSuccessGetReviews(result: [ReviewHomeResult]) {
+        self.data = result
+        self.dismissIndicator()
+        scrollView.refreshControl?.endRefreshing()
+        tableView.reloadData()
+    }
+    
+    func failedToRequest(message: String) {
+        self.presentAlert(title: message)
+    }
+    
+    
 }

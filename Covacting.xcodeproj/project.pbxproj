@@ -32,6 +32,11 @@
 		AF516D2625FBF7DC00D664F2 /* ReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */; };
 		AF516D2725FBF7DC00D664F2 /* ReviewWriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */; };
 		AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5A1B1325FB6C0800A68C15 /* Constant.swift */; };
+		AF6F107625FC3F2300EA5EF1 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F107525FC3F2300EA5EF1 /* HomeDataManager.swift */; };
+		AF6F107A25FC3FB000EA5EF1 /* ReviewHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F107925FC3FB000EA5EF1 /* ReviewHomeResponse.swift */; };
+		AF7D2C2C25FC50DC00FF1730 /* ReviewWriteProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D2C2B25FC50DC00FF1730 /* ReviewWriteProtocol.swift */; };
+		AF7D2C3125FC517A00FF1730 /* ReviewWriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D2C3025FC517A00FF1730 /* ReviewWriteDataManager.swift */; };
+		AF7D2C3425FC51B100FF1730 /* ReviewWriteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7D2C3325FC51B100FF1730 /* ReviewWriteResponse.swift */; };
 		AFF78D7D25FBAF8C003A8A2D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */; };
 		AFF78D7E25FBAF8C003A8A2D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */; };
 		AFF78D8425FBB717003A8A2D /* GmarketSansMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */; };
@@ -68,6 +73,11 @@
 		AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteViewController.swift; sourceTree = "<group>"; };
 		AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewWriteViewController.xib; sourceTree = "<group>"; };
 		AF5A1B1325FB6C0800A68C15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AF6F107525FC3F2300EA5EF1 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		AF6F107925FC3FB000EA5EF1 /* ReviewHomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewHomeResponse.swift; sourceTree = "<group>"; };
+		AF7D2C2B25FC50DC00FF1730 /* ReviewWriteProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteProtocol.swift; sourceTree = "<group>"; };
+		AF7D2C3025FC517A00FF1730 /* ReviewWriteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteDataManager.swift; sourceTree = "<group>"; };
+		AF7D2C3325FC51B100FF1730 /* ReviewWriteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWriteResponse.swift; sourceTree = "<group>"; };
 		AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AFF78D7C25FBAF8C003A8A2D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AFF78D8125FBB717003A8A2D /* GmarketSansMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansMedium.otf; sourceTree = "<group>"; };
@@ -102,6 +112,8 @@
 		AF17140325FBAC190075F56D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				AF6F107425FC3EFD00EA5EF1 /* Entity */,
+				AF6F107325FC3EF500EA5EF1 /* DataManager */,
 				AF516D1825FBEB4800D664F2 /* Protocol */,
 				AF516D0A25FBD95F00D664F2 /* Cell */,
 				AFF78D7B25FBAF8C003A8A2D /* HomeViewController.swift */,
@@ -244,10 +256,53 @@
 		AF516D1E25FBF59D00D664F2 /* Write */ = {
 			isa = PBXGroup;
 			children = (
+				AF7D2C2F25FC512800FF1730 /* Entity */,
+				AF7D2C2E25FC512300FF1730 /* DataManager */,
+				AF7D2C2A25FC50C000FF1730 /* Protocol */,
 				AF516D2425FBF7DC00D664F2 /* ReviewWriteViewController.swift */,
 				AF516D2525FBF7DC00D664F2 /* ReviewWriteViewController.xib */,
 			);
 			path = Write;
+			sourceTree = "<group>";
+		};
+		AF6F107325FC3EF500EA5EF1 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				AF6F107525FC3F2300EA5EF1 /* HomeDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		AF6F107425FC3EFD00EA5EF1 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF6F107925FC3FB000EA5EF1 /* ReviewHomeResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AF7D2C2A25FC50C000FF1730 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AF7D2C2B25FC50DC00FF1730 /* ReviewWriteProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		AF7D2C2E25FC512300FF1730 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				AF7D2C3025FC517A00FF1730 /* ReviewWriteDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		AF7D2C2F25FC512800FF1730 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AF7D2C3325FC51B100FF1730 /* ReviewWriteResponse.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		AFF78D8E25FBC6A6003A8A2D /* CommonCell */ = {
@@ -398,15 +453,19 @@
 				AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */,
 				AF35ED7725FB64B100EE1C9D /* AppDelegate.swift in Sources */,
 				AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */,
+				AF7D2C2C25FC50DC00FF1730 /* ReviewWriteProtocol.swift in Sources */,
+				AF7D2C3425FC51B100FF1730 /* ReviewWriteResponse.swift in Sources */,
 				AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */,
 				AF35EDB525FB688100EE1C9D /* Date.swift in Sources */,
 				AF35ED9F25FB66DE00EE1C9D /* BaseTabBarController.swift in Sources */,
+				AF7D2C3125FC517A00FF1730 /* ReviewWriteDataManager.swift in Sources */,
 				AF35EDA425FB66FF00EE1C9D /* BaseViewController.swift in Sources */,
 				AF35EDBB25FB68EE00EE1C9D /* UIView.swift in Sources */,
 				AF35EDB225FB686400EE1C9D /* String.swift in Sources */,
 				AFF78D8925FBC0D2003A8A2D /* CALayer.swift in Sources */,
 				AF35EDAB25FB682300EE1C9D /* IndicatorView.swift in Sources */,
 				AF35EDC425FB693F00EE1C9D /* UINavigationBar.swift in Sources */,
+				AF6F107625FC3F2300EA5EF1 /* HomeDataManager.swift in Sources */,
 				AFF78D7D25FBAF8C003A8A2D /* HomeViewController.swift in Sources */,
 				AF35EDB825FB68A200EE1C9D /* UIFont.swift in Sources */,
 				AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */,
@@ -414,6 +473,7 @@
 				AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */,
 				AF516D2625FBF7DC00D664F2 /* ReviewWriteViewController.swift in Sources */,
 				AF516D0F25FBD98700D664F2 /* tagCollectionViewCell.swift in Sources */,
+				AF6F107A25FC3FB000EA5EF1 /* ReviewHomeResponse.swift in Sources */,
 				AF516D1A25FBEB5500D664F2 /* HomeViewControllerProtocol.swift in Sources */,
 				AF516D1525FBE53300D664F2 /* ReviewTableViewCell.swift in Sources */,
 			);

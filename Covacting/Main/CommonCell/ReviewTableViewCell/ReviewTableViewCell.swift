@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ReviewTableViewCell: UITableViewCell {
     static let nibName = "ReviewTableViewCell"
@@ -31,10 +32,56 @@ class ReviewTableViewCell: UITableViewCell {
         }
     }
     var index: Int?
+    var homeData: ReviewHomeResult? {
+        didSet {
+            if let data = homeData {
+                if let str = data.userProfileImgLink, let url = URL(string: str) {
+                    profileImageView.kf.setImage(with: url)
+                } else {
+                    profileImageView.image = UIImage(named: "profileDefaultImage")
+                }
+                
+                nicknameLabel.text = data.userNickname
+                vaccineTypeLabel.text = data.vaccineName
+                contentLabel.text = data.reviewContent
+                likeCountLabel.text = "\(data.likeReviewCount)명이 좋아합니다"
+                
+                if let likeClicked = data.likeClicked, likeClicked {
+                    likeButton.isSelected = true
+                } else {
+                    likeButton.isSelected = false
+                }
+                
+                if data.likeStatus == 1 {
+                    likeButton.isSelected = true
+                } else {
+                    likeButton.isSelected = false
+                }
+                
+                if let isExpanded = data.isExpanded, isExpanded == true {
+                    expandButton.isUserInteractionEnabled = false
+                    expandButton.isHidden = true
+                    contentLabelHeight.constant = max(contentLabelMinHeight, getLabelHeight())
+                    if let index = index {
+                        self.delegate?.expandButtonClicked(index: index, isExpanded: true)
+                    }
+                } else {
+                    expandButton.isUserInteractionEnabled = true
+                    expandButton.isHidden = false
+                    contentLabelHeight.constant = contentLabelMinHeight
+                    if let index = index {
+                        self.delegate?.expandButtonClicked(index: index, isExpanded: false)
+                    }
+                }
+            }
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        profileImageView.kf.indicatorType = .activity
         
         likeButton.setImage(UIImage(named: "iconLikeAct"), for: .selected)
         likeButton.setImage(UIImage(named: "iconLikeInact"), for: .normal)
@@ -53,28 +100,20 @@ class ReviewTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setTextDelegate(contentText: String, index: Int, delegate: ReviewTableViewCellDelegate) {
+    func setTextDelegate(homeData: ReviewHomeResult, index: Int, delegate: ReviewTableViewCellDelegate) {
         self.index = index
-        self.contentText = contentText
+        self.homeData = homeData
         self.delegate = delegate
     }
     
     @objc func expandButtonClicked(_ sender: UIButton) {
         sender.isSelected.toggle()
         expandButton.backgroundColor = .white
+        expandButton.isHidden = true
+        expandButton.isUserInteractionEnabled = false
         
         if sender.isSelected {
-            if let text = contentLabel.text {
-                let size = CGSize(width: contentLabel.frame.width, height: .greatestFiniteMagnitude)
-
-                let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
-
-                let attributes: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font: contentLabel.font as Any]
-
-                let rectangleHeight = String(text).boundingRect(with: size, options: options, attributes: attributes, context: nil).height
-                
-                contentLabelHeight.constant = max(contentLabelMinHeight, rectangleHeight)
-            }
+            contentLabelHeight.constant = max(contentLabelMinHeight, getLabelHeight())
         } else {
             contentLabelHeight.constant = contentLabelMinHeight
         }
@@ -85,10 +124,29 @@ class ReviewTableViewCell: UITableViewCell {
     }
     
     @objc func likeButtonClicked(_ sender: UIButton) {
+        sender.isSelected.toggle()
         
+        if let index = index {
+            self.delegate?.likeButtonClicked(index: index, likeClicked: sender.isSelected)
+        }
     }
     
     @objc func commentButtonClicked(_ sender: UIButton) {
         
+    }
+    
+    func getLabelHeight() -> CGFloat {
+        if let text = contentLabel.text {
+            let size = CGSize(width: contentLabel.frame.width, height: .greatestFiniteMagnitude)
+
+            let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+
+            let attributes: [NSAttributedString.Key : Any] = [NSAttributedString.Key.font: contentLabel.font as Any]
+
+            let rectangleHeight = String(text).boundingRect(with: size, options: options, attributes: attributes, context: nil).height
+            
+            return rectangleHeight
+        }
+        return 0
     }
 }

@@ -8,5 +8,6 @@ target 'Covacting' do
   # Pods for Covacting
   pod 'SnapKit'
   pod 'Alamofire'
+  pod 'Kingfisher'
   pod 'IQKeyboardManagerSwift'
 end

@@ -23,6 +23,7 @@ class ReviewWriteViewController: UIViewController {
     // MARK: Variables
     lazy var reviewTextViewHeightMinValue = self.view.frame.height * 0.548726
     let vaccins: [String] = ["화이자", "모더나", "아스트라제네카", "얀센"]
+    lazy var dataManager = ReviewWriteDataManager(delegate: self)
     
     // MARK: View Life Cycle Methods
     
@@ -30,6 +31,8 @@ class ReviewWriteViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.title = "후기 작성하기"
+        
         initScrollView()
         initTextView()
         initTextField()
@@ -115,6 +118,9 @@ class ReviewWriteViewController: UIViewController {
                 return
             }
             
+            let body = ReviewWriteBody(reviewContent: self.reviewTextView.text, vaccineName: self.vaccineTextField.text!)
+            self.dataManager.postReview(body: body)
+            
         }))
         
         self.present(alert, animated: true, completion: nil)
@@ -147,4 +153,22 @@ extension ReviewWriteViewController: UIPickerViewDelegate, UIPickerViewDataSourc
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return vaccins[row]
     }
+}
+
+
+extension ReviewWriteViewController: ReviewWriteViewControllerDelegate {
+    func didSuccessPostReview() {
+        self.dismissIndicator()
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func didSuccessPatchReview() {
+    }
+    
+    func failedToRequest(message: String) {
+        self.dismissIndicator()
+        self.presentAlert(title: message)
+    }
+    
+    
 }
