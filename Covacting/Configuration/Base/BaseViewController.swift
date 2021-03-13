@@ -10,7 +10,7 @@ import UIKit
 class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
     let homeViewController  = BaseViewController()
     let vaccineInfoViewController = VaccineInfoViewController()
-    let myPageViewController = BaseViewController()
+    let myPageViewController = MyPageViewController()
     
     let homeTabBarItem  = UITabBarItem(title: "홈", image: nil, tag: 0)
     let vaccineInfoTabBarItem  = UITabBarItem(title: "백신 정보", image: nil, tag: 1)

@@ -29,7 +29,6 @@ class VaccineInfoViewController: UIViewController {
         let headerNib = UINib.init(nibName: "InfoTableViewHeader", bundle: Bundle.main)
         vaccineInfoTableView.register(headerNib, forHeaderFooterViewReuseIdentifier: "InfoTableViewHeader")
         vaccineInfoTableView.register(UINib(nibName: VaccineInfoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: VaccineInfoTableViewCell.identifier)
-
     }
 }
 
@@ -40,6 +39,10 @@ extension VaccineInfoViewController: UITableViewDelegate, UITableViewDataSource 
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         3
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -55,6 +58,10 @@ extension VaccineInfoViewController: UITableViewDelegate, UITableViewDataSource 
         cell.configure()
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(DetailViewController(), animated: true)
     }
     
     

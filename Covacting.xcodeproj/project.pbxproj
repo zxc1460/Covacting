@@ -14,6 +14,18 @@
 		005E15A325FBBDF9003CD008 /* VaccineInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15A125FBBDF9003CD008 /* VaccineInfoViewController.xib */; };
 		005E15AC25FBC2FD003CD008 /* InfoTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15AB25FBC2FD003CD008 /* InfoTableViewHeader.swift */; };
 		005E15B025FBC35C003CD008 /* InfoTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15AF25FBC35C003CD008 /* InfoTableViewHeader.xib */; };
+		005E15BF25FBCEE1003CD008 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15BD25FBCEE1003CD008 /* MyPageViewController.swift */; };
+		005E15C025FBCEE1003CD008 /* MyPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15BE25FBCEE1003CD008 /* MyPageViewController.xib */; };
+		005E15C825FC36AF003CD008 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15C625FC36AF003CD008 /* DetailViewController.swift */; };
+		005E15C925FC36AF003CD008 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15C725FC36AF003CD008 /* DetailViewController.xib */; };
+		005E15D225FC431D003CD008 /* ProfileSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15D025FC431D003CD008 /* ProfileSettingViewController.swift */; };
+		005E15D325FC431D003CD008 /* ProfileSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15D125FC431D003CD008 /* ProfileSettingViewController.xib */; };
+		005E15D725FC4849003CD008 /* MyVaccineHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15D525FC4849003CD008 /* MyVaccineHistoryViewController.swift */; };
+		005E15D825FC4849003CD008 /* MyVaccineHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15D625FC4849003CD008 /* MyVaccineHistoryViewController.xib */; };
+		005E15E225FC6890003CD008 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15E025FC6890003CD008 /* CommentTableViewCell.swift */; };
+		005E15E325FC6890003CD008 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15E125FC6890003CD008 /* CommentTableViewCell.xib */; };
+		005E15E825FC6A62003CD008 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005E15E625FC6A62003CD008 /* CommentsViewController.swift */; };
+		005E15E925FC6A62003CD008 /* CommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005E15E725FC6A62003CD008 /* CommentsViewController.xib */; };
 		102E1E9097720CB796BD8667 /* Pods_Covacting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56028EB919D568B055C9A80 /* Pods_Covacting.framework */; };
 		AF35ED7725FB64B100EE1C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED7625FB64B100EE1C9D /* AppDelegate.swift */; };
 		AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35ED7825FB64B200EE1C9D /* SceneDelegate.swift */; };
@@ -42,6 +54,18 @@
 		005E15A125FBBDF9003CD008 /* VaccineInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VaccineInfoViewController.xib; sourceTree = "<group>"; };
 		005E15AB25FBC2FD003CD008 /* InfoTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewHeader.swift; sourceTree = "<group>"; };
 		005E15AF25FBC35C003CD008 /* InfoTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewHeader.xib; sourceTree = "<group>"; };
+		005E15BD25FBCEE1003CD008 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		005E15BE25FBCEE1003CD008 /* MyPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageViewController.xib; sourceTree = "<group>"; };
+		005E15C625FC36AF003CD008 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		005E15C725FC36AF003CD008 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		005E15D025FC431D003CD008 /* ProfileSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewController.swift; sourceTree = "<group>"; };
+		005E15D125FC431D003CD008 /* ProfileSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSettingViewController.xib; sourceTree = "<group>"; };
+		005E15D525FC4849003CD008 /* MyVaccineHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVaccineHistoryViewController.swift; sourceTree = "<group>"; };
+		005E15D625FC4849003CD008 /* MyVaccineHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyVaccineHistoryViewController.xib; sourceTree = "<group>"; };
+		005E15E025FC6890003CD008 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		005E15E125FC6890003CD008 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		005E15E625FC6A62003CD008 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		005E15E725FC6A62003CD008 /* CommentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsViewController.xib; sourceTree = "<group>"; };
 		59231794B92B1E18076A0FDB /* Pods-Covacting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covacting.release.xcconfig"; path = "Target Support Files/Pods-Covacting/Pods-Covacting.release.xcconfig"; sourceTree = "<group>"; };
 		AF35ED7325FB64B100EE1C9D /* Covacting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covacting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35ED7625FB64B100EE1C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,13 +105,14 @@
 		005E158725FBB9E4003CD008 /* VaccineInfo */ = {
 			isa = PBXGroup;
 			children = (
+				005E15A025FBBDF9003CD008 /* VaccineInfoViewController.swift */,
+				005E15A125FBBDF9003CD008 /* VaccineInfoViewController.xib */,
+				005E15C625FC36AF003CD008 /* DetailViewController.swift */,
+				005E15C725FC36AF003CD008 /* DetailViewController.xib */,
+				005E15C525FC3688003CD008 /* HeaderFooter */,
 				005E158A25FBB9F8003CD008 /* Entity */,
 				005E158925FBB9F2003CD008 /* DataManager */,
 				005E158825FBB9EC003CD008 /* Cell */,
-				005E15A025FBBDF9003CD008 /* VaccineInfoViewController.swift */,
-				005E15A125FBBDF9003CD008 /* VaccineInfoViewController.xib */,
-				005E15AB25FBC2FD003CD008 /* InfoTableViewHeader.swift */,
-				005E15AF25FBC35C003CD008 /* InfoTableViewHeader.xib */,
 			);
 			path = VaccineInfo;
 			sourceTree = "<group>";
@@ -113,6 +138,56 @@
 			children = (
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		005E15BA25FBCDC0003CD008 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				005E15DF25FC6877003CD008 /* Cell */,
+				005E15BC25FBCDEC003CD008 /* DataManager */,
+				005E15BB25FBCDE2003CD008 /* Entity */,
+				005E15BD25FBCEE1003CD008 /* MyPageViewController.swift */,
+				005E15BE25FBCEE1003CD008 /* MyPageViewController.xib */,
+				005E15D025FC431D003CD008 /* ProfileSettingViewController.swift */,
+				005E15D125FC431D003CD008 /* ProfileSettingViewController.xib */,
+				005E15D525FC4849003CD008 /* MyVaccineHistoryViewController.swift */,
+				005E15D625FC4849003CD008 /* MyVaccineHistoryViewController.xib */,
+				005E15E625FC6A62003CD008 /* CommentsViewController.swift */,
+				005E15E725FC6A62003CD008 /* CommentsViewController.xib */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		005E15BB25FBCDE2003CD008 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		005E15BC25FBCDEC003CD008 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		005E15C525FC3688003CD008 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				005E15AB25FBC2FD003CD008 /* InfoTableViewHeader.swift */,
+				005E15AF25FBC35C003CD008 /* InfoTableViewHeader.xib */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		005E15DF25FC6877003CD008 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				005E15E025FC6890003CD008 /* CommentTableViewCell.swift */,
+				005E15E125FC6890003CD008 /* CommentTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6FE1F183E181F910A49860EE /* Pods */ = {
@@ -145,6 +220,7 @@
 		AF35ED7525FB64B100EE1C9D /* Covacting */ = {
 			isa = PBXGroup;
 			children = (
+				005E15BA25FBCDC0003CD008 /* Mypage */,
 				005E158725FBB9E4003CD008 /* VaccineInfo */,
 				AF35ED8F25FB654C00EE1C9D /* Configuration */,
 				AF35ED8E25FB654200EE1C9D /* Splash */,
@@ -292,10 +368,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005E15C025FBCEE1003CD008 /* MyPageViewController.xib in Resources */,
+				005E15D825FC4849003CD008 /* MyVaccineHistoryViewController.xib in Resources */,
 				005E15B025FBC35C003CD008 /* InfoTableViewHeader.xib in Resources */,
 				AF35ED8325FB64B300EE1C9D /* LaunchScreen.storyboard in Resources */,
+				005E15C925FC36AF003CD008 /* DetailViewController.xib in Resources */,
+				005E15D325FC431D003CD008 /* ProfileSettingViewController.xib in Resources */,
 				005E15A325FBBDF9003CD008 /* VaccineInfoViewController.xib in Resources */,
 				005E159D25FBBAE1003CD008 /* BlackHanSans-Regular.ttf in Resources */,
+				005E15E925FC6A62003CD008 /* CommentsViewController.xib in Resources */,
+				005E15E325FC6890003CD008 /* CommentTableViewCell.xib in Resources */,
 				AF35ED8025FB64B300EE1C9D /* Assets.xcassets in Resources */,
 				005E159A25FBBAB5003CD008 /* VaccineInfoTableViewCell.xib in Resources */,
 			);
@@ -350,12 +432,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005E15BF25FBCEE1003CD008 /* MyPageViewController.swift in Sources */,
 				AF35EDC125FB692400EE1C9D /* UIViewController.swift in Sources */,
 				005E159925FBBAB5003CD008 /* VaccineInfoTableViewCell.swift in Sources */,
+				005E15E225FC6890003CD008 /* CommentTableViewCell.swift in Sources */,
 				AF35ED7725FB64B100EE1C9D /* AppDelegate.swift in Sources */,
 				AF5A1B1425FB6C0800A68C15 /* Constant.swift in Sources */,
 				AF35EDBE25FB691100EE1C9D /* UIButton.swift in Sources */,
 				AF35EDB525FB688100EE1C9D /* Date.swift in Sources */,
+				005E15D725FC4849003CD008 /* MyVaccineHistoryViewController.swift in Sources */,
+				005E15C825FC36AF003CD008 /* DetailViewController.swift in Sources */,
 				005E15AC25FBC2FD003CD008 /* InfoTableViewHeader.swift in Sources */,
 				AF35ED9F25FB66DE00EE1C9D /* BaseViewController.swift in Sources */,
 				AF35EDA425FB66FF00EE1C9D /* BaseTabBarController.swift in Sources */,
@@ -366,8 +452,10 @@
 				005E15A225FBBDF9003CD008 /* VaccineInfoViewController.swift in Sources */,
 				AF35EDB825FB68A200EE1C9D /* UIFont.swift in Sources */,
 				AF35EDA825FB680B00EE1C9D /* Device.swift in Sources */,
+				005E15E825FC6A62003CD008 /* CommentsViewController.swift in Sources */,
 				AF35EDAE25FB684D00EE1C9D /* Color.swift in Sources */,
 				AF35ED7925FB64B200EE1C9D /* SceneDelegate.swift in Sources */,
+				005E15D225FC431D003CD008 /* ProfileSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76RZ8ND7HV;
+				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = Covacting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 76RZ8ND7HV;
+				DEVELOPMENT_TEAM = KQS5CL5P74;
 				INFOPLIST_FILE = Covacting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
