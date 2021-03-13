@@ -8,6 +8,15 @@
 import UIKit
 import SnapKit
 
+class BaseTabBarController: UITabBarController, UITabBarControllerDelegate {
+    let homeViewController  = BaseViewController()
+    let vaccineInfoViewController = VaccineInfoViewController()
+    let myPageViewController = MyPageViewController()
+    
+    let homeTabBarItem  = UITabBarItem(title: "홈", image: nil, tag: 0)
+    let vaccineInfoTabBarItem  = UITabBarItem(title: "백신 정보", image: nil, tag: 1)
+    let myPageTabBarItem  = UITabBarItem(title: "내 정보", image: nil, tag: 2)
+  
 class BaseViewController: UIViewController {
     let mainLogoImageView: UIImageView = {
        let imageView = UIImageView(image: UIImage(named: "mainLogo"))

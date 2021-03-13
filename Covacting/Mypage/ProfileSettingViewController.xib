@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileSettingViewController" customModule="Covacting" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="KPA-81-ulP" id="Xd6-yL-p25"/>
+                <outlet property="emailTitleLabel" destination="deK-K4-rUr" id="AJ0-1n-7kW"/>
+                <outlet property="nameTextField" destination="TIm-7o-Ihh" id="GE3-Mq-BsX"/>
+                <outlet property="nameTitleLabel" destination="yg4-Y6-QhJ" id="M7O-7O-EKL"/>
+                <outlet property="profileImage" destination="LgW-hk-elI" id="IT8-cM-1uO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group11Copy" translatesAutoresizingMaskIntoConstraints="NO" id="LgW-hk-elI">
+                    <rect key="frame" x="167.5" y="74" width="79" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="B0b-0G-3Nz"/>
+                        <constraint firstAttribute="height" constant="79" id="E1b-kY-9dW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yg4-Y6-QhJ">
+                    <rect key="frame" x="20" y="181" width="384" height="24"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIm-7o-Ihh">
+                    <rect key="frame" x="20" y="213" width="374" height="34"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPA-81-ulP">
+                    <rect key="frame" x="20" y="309" width="374" height="34"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deK-K4-rUr">
+                    <rect key="frame" x="20" y="277" width="384" height="24"/>
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="deK-K4-rUr" firstAttribute="top" secondItem="TIm-7o-Ihh" secondAttribute="bottom" constant="30" id="3nP-jw-y3a"/>
+                <constraint firstItem="TIm-7o-Ihh" firstAttribute="top" secondItem="yg4-Y6-QhJ" secondAttribute="bottom" constant="8" id="Blr-Ig-6OP"/>
+                <constraint firstItem="LgW-hk-elI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Cxt-Oz-ClA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KPA-81-ulP" secondAttribute="bottom" constant="10" id="KBI-FB-IE9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yg4-Y6-QhJ" secondAttribute="trailing" constant="10" id="KrB-39-oM7"/>
+                <constraint firstItem="KPA-81-ulP" firstAttribute="top" secondItem="deK-K4-rUr" secondAttribute="bottom" constant="8" id="Ome-9h-y6y"/>
+                <constraint firstItem="KPA-81-ulP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="S5d-Ya-paj"/>
+                <constraint firstItem="LgW-hk-elI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Xcg-fB-NvQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="deK-K4-rUr" secondAttribute="trailing" constant="10" id="bOM-ll-Sb9"/>
+                <constraint firstItem="yg4-Y6-QhJ" firstAttribute="top" secondItem="LgW-hk-elI" secondAttribute="bottom" constant="28" id="g1z-kb-WTo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TIm-7o-Ihh" secondAttribute="trailing" constant="20" id="hzL-6x-Urj"/>
+                <constraint firstItem="deK-K4-rUr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="oyS-Qh-AHG"/>
+                <constraint firstItem="TIm-7o-Ihh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sNi-Rx-WPq"/>
+                <constraint firstItem="yg4-Y6-QhJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="vyU-OY-edp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KPA-81-ulP" secondAttribute="trailing" constant="20" id="z5v-uF-fTg"/>
+            </constraints>
+            <point key="canvasLocation" x="19" y="69"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="group11Copy" width="79" height="79"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
